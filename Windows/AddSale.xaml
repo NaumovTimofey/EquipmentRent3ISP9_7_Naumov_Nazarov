@@ -1,0 +1,130 @@
+﻿<Window x:Class="EquipmentRent3ISP9_7.Windows.AddSale"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentRent3ISP9_7.Windows"
+        mc:Ignorable="d"
+        Title="AddSale" 
+        Height="800" 
+        Width="600"
+        MinHeight="550"
+        MinWidth="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="tbTitle"
+                   Text="Добавление записи"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   
+                   TextAlignment="Center"
+                   FontSize="30px"/>
+
+        <!-- Левая часть -->
+        <TextBlock Grid.Row="1"
+                   Text="ID клиента"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0,0,20,0"
+                   FontSize="16"/>
+        <TextBlock Grid.Row="2"
+                   Text="ID товара"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0,0,20,0"
+                   FontSize="16"/>
+        <TextBlock Grid.Row="3"
+                   Text="ID работника"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0,0,20,0"
+                   FontSize="16"/>
+        <TextBlock Grid.Row="4"
+                   Text="Дата проджаи"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0,0,20,0"
+                   FontSize="16"/>
+        <TextBlock Grid.Row="5"
+                   Text="Дата возврата"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0,0,20,0"
+                   FontSize="16"/>
+
+        <!-- Правая часть -->
+        <TextBox x:Name="txtLname"
+                 Width="240"
+                 Grid.Column="1"
+                 Grid.Row="1"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontSize="16"
+                 MaxLength="50"/>
+        <TextBox x:Name="txtFname"
+                 Width="240"
+                 Grid.Column="1"
+                 Grid.Row="2"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontSize="16"
+                 MaxLength="50"/>
+        <TextBox x:Name="txtMname"
+                 Width="240"
+                 Grid.Column="1"
+                 Grid.Row="3"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontSize="16"
+                 MaxLength="50"/>
+        <DatePicker Width="240"
+                 Grid.Column="1"
+                 Grid.Row="4"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontSize="16"
+            />
+        <DatePicker Width="240"
+                 Grid.Column="1"
+                 Grid.Row="5"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontSize="16"
+            />
+
+        <Button x:Name="btnAddNew"
+                Grid.Row="14"
+                Grid.ColumnSpan="2"
+                Width="120"
+                Height="30"
+                FontSize="13"
+                Content="Добавить"
+                HorizontalAlignment="Center"
+                VerticalContentAlignment="Center"
+                Background="#314b54"
+                Foreground="White"
+               />
+    </Grid>
+</Window>

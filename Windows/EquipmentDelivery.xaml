@@ -1,0 +1,22 @@
+﻿<Window x:Class="EquipmentRent3ISP9_7.Windows.EquipmentDelivery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentRent3ISP9_7.Windows"
+        mc:Ignorable="d"
+        Title="EquipmentDelivery" 
+        Height="650" Width="800"
+        ResizeMode="NoResize"
+        >
+    <Grid>
+        <StackPanel x:Name="mainContainer"
+                    Margin="20px 10px" 
+                    >
+            <TextBlock Text="Выдача оборудования"
+                       TextAlignment="Center"
+                       FontSize="30px"
+                       Margin="0 0 0 40px"/>
+        </StackPanel>
+    </Grid>
+</Window>
